@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "ChromeClock",
+  "description": "This extension shows a clock in the brower's toolbar",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "clock.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+  "permissions": [
+    "notifications",
+    "storage",
+    "alarms"
+  ],
+  "offline_enabled": true,
+  "author": "Sarah Miller"
+}
